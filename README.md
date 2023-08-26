@@ -3,9 +3,9 @@ Partial implementation of HTTP, utilizing OOP Principles.
 - Threaded (multiple clients)
 - GET only.
 - Error handling:
-  - Page Not found
-  - Bad Request
   - Redirection
+  - Page Not Found
+  - Bad Request
   - Internal Server Error<br><br>
 ----------------
 ### Starting the Server
@@ -40,6 +40,28 @@ Using Configuration.RootPath, map the URI to the physical path.<br><br>
 Example:<br> **configuration.RootPath**= “c:\intepub\wwwroot\fcis1” and **URI** = “/aboutus.html” <br>then **physical path**= “c:\intepub\wwwroot\fcis1\aboutus.html”
 
 ----------------
+### Error handling
+
+| Redirection | 
+| ------------- | 
+ If the URI exists in the configuration.RedirectionRules, <br>then return 301 Redirection Error and add location header with the new redirected URI.
+ The content should be the content of the static page “redirect.html”  
+ 
+| Not Found | 
+| ------------- | 
+If the physical file is not found,<br> return 404 Not Found error.
+The content should be the content of the static page “Notfound.html”
+
+| Bad Request | 
+| ------------- |
+If there is any parsing error in the request,<br> return 400 Bad Request Error.
+The content should be loaded with the content of the static page “BadRequest.html”
+
+| Internal Server Error | 
+| ------------- |
+If there is any unknown exception,<br> return 500 Internal Server Error.
+The content should be the content of the static page “InternalError.html”
 
 
+-----------
 
