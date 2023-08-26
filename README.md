@@ -2,6 +2,7 @@
 Partial implementation of HTTP, utilizing OOP Principles.
 - Threaded (multiple clients)
 - GET only.
+- Handling Request status.
 - Error handling:
   - Redirection
   - Page Not Found
