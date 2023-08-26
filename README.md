@@ -65,3 +65,21 @@ The content should be the content of the static page “InternalError.html”
 
 -----------
 
+### Run the server
+
+Try the following URIs in the web browser:<br>
+<br>
+http://localhost:1000/aboutus2.html
+<br>should display aboutus2.html page<br>
+<br>
+http://localhost:1000/aboutus.html
+<br>should display aboutus2.html (Redirection)<br>
+<br>
+http://localhost:1000/main.html
+<br>should display main page<br>
+<br>
+http://localhost:1000/blabla.html
+<br>should display 404 page.<br>
+<br>
+
+---------------
