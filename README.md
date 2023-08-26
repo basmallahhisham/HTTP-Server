@@ -25,7 +25,7 @@ What is valid HTTP request?
 ### Response Headers
 The response includes the following headers:
 - **Content-Type:**
-     We used only text/html
+     We used only **text/html**
 - **Content-Length:**
      The length of the content sent in the response.
   - This can be useful for the client to know how much data to expect and for the server to know how much data to send.<br>
@@ -34,6 +34,11 @@ The response includes the following headers:
      Current DateTime of the server.
 - **Location:**
      Only if there is redirection.
+----------------
+### Handling Request
+Using Configuration.RootPath, map the URI to the physical path.<br><br>
+Example:<br> **configuration.RootPath**= “c:\intepub\wwwroot\fcis1” and **URI** = “/aboutus.html” <br>then **physical path**= “c:\intepub\wwwroot\fcis1\aboutus.html”
+
 ----------------
 
 
