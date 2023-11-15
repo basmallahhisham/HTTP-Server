@@ -1,5 +1,5 @@
 # HTTP-Server
-Partial implementation of HTTP, utilizing OOP Principles.
+Partial implementation of HTTP utilizing OOP Principles.
 - Threaded (multiple clients)
 - GET only.
 - Handling Request status.
